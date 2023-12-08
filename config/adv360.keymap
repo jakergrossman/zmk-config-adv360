@@ -166,9 +166,19 @@
             bindings = <
 &dollar_tilde  &sym_row_1     &sym_row_2  &sym_row_3  &sym_row_4  &sym_row_5  &kp K_COPY   &kp K_CALCULATOR  &sym_row_6  &sym_row_7  &sym_row_8     &sym_row_9     &sym_row_0  &excl_pct
 &kp SLASH      &kp SQT        &kp COMMA   &kp PERIOD  &kp P       &kp Y       &kp K_PASTE  &at_uptick        &kp F       &kp G       &kp C          &kp R          &kp L       &kp BSLH
-&lt 3 ESCAPE   &kp A          &kp O       &kp E       &kp U       &kp I       &kp K_CUT    &kp LGUI          &kp LALT                               &kp RIGHT_ALT  &kp RCTRL   &pipe_grave  &kp D     &kp H  &kp T  &kp N  &kp S     &kp MINUS
+&lt 1 ESCAPE   &kp A          &kp O       &kp E       &kp U       &kp I       &kp K_CUT    &kp LGUI          &kp LALT                               &kp RIGHT_ALT  &kp RCTRL   &pipe_grave  &kp D     &kp H  &kp T  &kp N  &kp S     &kp MINUS
 &kp LSHFT      &kp SEMICOLON  &kp Q       &kp J       &kp K       &kp X       &none        &none             &kp HOME    &none       &none          &kp PG_UP      &none       &none        &kp B     &kp M  &kp W  &kp V  &kp FSLH  &kp RSHFT
-&mo 3          &kp F13        &kp F14     &kp F15     &kp F16     &kp SPACE   &kp TAB      &kp END           &kp PG_DN   &kp ENTER   &kp BACKSPACE  &kp UP         &kp DOWN    &kp LBKT     &kp RBKT  &mo 3
+&mo 1          &kp F13        &kp F14     &kp F15     &kp F16     &kp SPACE   &kp TAB      &kp END           &kp PG_DN   &kp ENTER   &kp BACKSPACE  &kp UP         &kp DOWN    &kp LBKT     &kp RBKT  &mo 1
+            >;
+        };
+
+        fn {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4    &kp F5        &kp F6          &tog 2  &mo 4   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12
+&trans  &trans  &trans  &trans    &trans        &kp K_UNDO      &none   &none   &trans  &trans  &trans  &trans   &kp RIGHT  &trans
+&trans  &trans  &trans  &trans    &trans        &kp LC(K_REDO)  &none   &trans  &trans                  &trans   &trans     &none    &kp LEFT  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &kp DOWN  &kp UP_ARROW  &kp DELETE      &none   &none   &trans  &none   &none   &trans   &none      &none    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans    &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans   &trans     &trans   &trans    &trans
             >;
         };
 
@@ -178,7 +188,7 @@
 &kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T     &none    &none      &kp Y      &kp KP_N7   &kp KP_N8     &kp KP_N9      &kp KP_MINUS     &kp BSLH
 &kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G     &none    &kp LCTRL  &kp LALT                             &kp LGUI       &kp RCTRL        &none       &kp H     &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp SQT
 &kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B     &none    &none      &kp HOME   &none       &none         &kp PG_UP      &none            &none       &kp N     &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_ENTER  &kp RSHFT
-&mo 3      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BKSP  &kp DEL  &kp END    &kp PG_DN  &kp ENTER   &kp KP_N0     &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT  &mo 3
+&mo 1      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT  &kp BKSP  &kp DEL  &kp END    &kp PG_DN  &kp ENTER   &kp KP_N0     &kp UP         &kp DOWN         &kp KP_DOT  &kp RBKT  &mo 1
             >;
         };
 
@@ -189,16 +199,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        fn {
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4    &kp F5        &kp F6          &tog 1  &mo 4   &kp F7  &kp F8  &kp F9  &kp F10  &kp F11    &kp F12
-&trans  &trans  &trans  &trans    &trans        &kp K_UNDO      &none   &none   &trans  &trans  &trans  &trans   &kp RIGHT  &trans
-&trans  &trans  &trans  &trans    &trans        &kp LC(K_REDO)  &none   &trans  &trans                  &trans   &trans     &none    &kp LEFT  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp DOWN  &kp UP_ARROW  &kp DELETE      &none   &none   &trans  &none   &none   &trans   &none      &none    &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans    &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans   &trans     &trans   &trans    &trans
             >;
         };
 
